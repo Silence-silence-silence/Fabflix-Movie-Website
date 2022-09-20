@@ -1,0 +1,15 @@
+*.iml
+.idea
+.settings
+target/
+.project
+.vscode
+.classpath
+bin
+query_test.sql
+movie-data.sql
+xml_parser/actors63.xml
+xml_parser/casts124.xml
+xml_parser/mains243.xml
+**/csv/
+**/out/

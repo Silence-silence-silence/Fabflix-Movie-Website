@@ -1,0 +1,307 @@
+h1 {
+    margin: 50px 2.5% 30px;
+}
+
+.page {
+    margin: 20px 2.5% 20px;
+    text-align: center;
+}
+
+.table-box {
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px 10px 20px;
+    box-shadow: 0px 0px 30px rgba( 100, 181, 246, 1);
+    display: inline-block;
+    width: 75%;
+    vertical-align: top;
+    min-width: 800px;
+}
+
+.table-movie {
+    font-size: 15px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-movie thead th {
+    color: white;
+    background: #424242;
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+.table-movie thead th:nth-child(even) {
+    background: #4fc3f7;
+}
+
+.table-movie tbody tr:nth-of-type(even) {
+    background-color: #f3f3f0;
+}
+
+.table-movie td,
+th {
+    text-align: center;
+    padding: 10px;
+}
+
+.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: initial;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+.pagination a.active {
+    background-color: #4fc3f7;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+#pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.link {
+    background-color: #4fc3f7;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.link.disabled {
+    pointer-events: none;
+    background-color: #cccccc;
+    color: #666666;
+}
+
+.link-dec {
+    vertical-align: middle;
+}
+
+
+/* .sortable_header {
+    cursor: pointer;
+}
+
+.table-movie .th-sort-asc::after {
+    content: "\25b4";
+}
+
+.table-movie .th-sort-desc::after {
+    content: "\25be";
+}
+
+.table-movie .th-sort-none::after {
+    content: " \2013";
+} */
+
+
+/*pop up*/
+
+.popup {
+    display: none;
+    border-radius: 5px;
+}
+
+.popup.open {
+    display: block;
+}
+
+.background {
+    content: ' ';
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.popup .Succeful {
+    border: 2px solid #ccc;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #9af3ff;
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    font-size: 20px;
+    transform: translate(-60%, -60%);
+}
+
+
+/*filter table*/
+
+.filter-box {
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px 10px 20px;
+    box-shadow: 0px 0px 30px rgba( 100, 181, 246, 1);
+    display: inline-block;
+    width: 15%;
+    vertical-align: top;
+    min-width: 250px;
+}
+
+.filter_head {
+    font-size: 25px;
+    margin: 15px 20px 15px;
+}
+
+.filter_table {
+    font-size: 15px;
+    width: 100%;
+}
+
+.filter_table td,
+th {
+    text-align: center;
+    padding: 10px;
+}
+
+.filter_table th {
+    color: black;
+    font-size: 18px;
+}
+
+.filter_table tr:nth-of-type(even) {
+    background-color: #f3f3f0;
+}
+
+.sort_button a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.sort_button a.active {
+    background-color: #4fc3f7;
+    color: white;
+}
+
+.sort_button a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.sort_head {
+    text-align: left;
+}
+
+#rangeValue {
+    position: relative;
+    display: block;
+    text-align: center;
+    color: #999;
+}
+
+#slider {
+    width: 200px;
+}
+
+#sort_button {
+    background-color: #4fc3f7;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 5px 20% 0px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.sort_button.disabled {
+    pointer-events: none;
+    background-color: #cccccc;
+    color: #666666;
+}
+
+.search-message-empty-container {
+    flex-direction: row;
+    align-items: center;
+}
+
+.search-message-empty-message {
+    font-size: 2.8vw;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 3%;
+    color: #666666;
+}
+
+#add_to_cart {
+    background-color: #424242;
+    border: none;
+    color: white;
+    padding: 8px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+
+/*cart */
+
+.fa.fa-shopping-cart {
+    color: #4fc3f7;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.fas.fa-home {
+    color: #4fc3f7;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10%;
+}
+
+.b {
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-around;
+}

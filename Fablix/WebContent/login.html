@@ -1,0 +1,65 @@
+<!-- This page will be redirected from any url if you are not logged in -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Login to Fablix</title>
+    <link rel="stylesheet" href="login.css" type="text/css" />
+    <script src='https://www.google.com/recaptcha/api.js' type="text/javascript"></script>
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" /> -->
+</head>
+
+<body>
+    <div class="a">
+        <div class="b"> </div>
+        <div class="c">
+            <form class="d" id="login_form" method="post">
+                <h1> Login To </h1>
+                <h2> Fablix </h2>
+                <input class="e" name="username" placeholder="Account" type="text" />
+                <input class="e" name="password" placeholder="Password" type="password" />
+                <input class="g" type="submit" value="Login" />
+                <div class="g-recaptcha" class="e" data-sitekey="6LdZQRgdAAAAAELWE_dNjw17nebkV8OW7NnaLrvX"></div>
+                <div class="f" id="login_error_message" value="Login"></div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- <h2>Login to Fablix</h2>
+    <form id="login_form" method="post">
+        <label><b>Username</b></label>
+        <label>
+                <input
+                    name="username"
+                    placeholder="Enter Username"
+                    type="text"
+                />
+            </label>
+        <br />
+        <label><b>Password</b></label>
+        <label>
+                <input
+                    name="password"
+                    placeholder="Enter Password"
+                    type="password"
+                />
+            </label>
+        <br />
+        <input type="submit" value="Login" />
+    </form>
+
+    <div id="login_error_message"></div> -->
+
+    <!-- include jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- include our own JS file -->
+    <script src="./login.js"></script>
+</body>
+
+</html>

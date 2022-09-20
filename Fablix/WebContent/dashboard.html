@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>.popup {
+        display: none;
+    }
+
+    .popup.open {
+        display: block;
+    }
+
+    .background {
+        content: ' ';
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        position: fixed;
+    }
+
+    .popup .Succeful {
+        border: 2px solid #ccc;
+        width: 400px;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9af3ff;
+        position: fixed;
+        top: 50vh;
+        left: 50vw;
+        transform: translate(-60%, -60%);
+    }
+    </style>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body BGCOLOR="#FDF5E6">
+<h1 ALIGN="CENTER">Dash Board</h1>
+
+<div class="popup">
+    <div class="background" onclick="closepop()"></div>
+    <div class="Succeful" id="message"> </div>
+</div>
+<div id="metadata"></div>
+
+<div class="c">
+    <h1 class="search_head">Add movie: </h1>
+    <form class="d" id="add_movie2" action = "#" METHOD="GET">
+        <h3> Title: </h3>
+        <input class="e" TYPE="TEXT" placeholder="Title" name="name" />
+        <h3> Director: </h3>
+        <input class="e" TYPE="TEXT" placeholder="Director" name="director" />
+        <h3> Single Star: </h3>
+        <input class="e" TYPE="TEXT" placeholder="Star Name" name="stars" />
+        <h3> Year: </h3>
+        <input class="e" TYPE="TEXT" placeholder="Year" name="year" />
+        <h3> Single Genre: </h3>
+        <input class="e" TYPE="TEXT" placeholder="genre" name="genre" />
+        <input class="g" TYPE="SUBMIT" VALUE="Add">
+    </form>
+</div>
+
+<div class="c">
+    <h1 class="search_head">Add Star: </h1>
+    <form class="d" id="add_star" action = "#" METHOD="GET">
+        <h3> Name: </h3>
+        <input class="e" TYPE="TEXT" placeholder="Star Name" name="star_name" />
+        <h3> Birth Year: </h3>
+        <input class="e" TYPE="TEXT" placeholder="Birth Year" name="birth_year" />
+        <input class="g" TYPE="SUBMIT" VALUE="Add">
+    </form>
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="dashboard.js"></script>
+</body>
+</html>

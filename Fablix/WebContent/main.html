@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Fabflix - Home Page</title>
+</head>
+
+<body>
+
+
+
+    <div class="head_a">
+
+        <h1 id="username"> Welcome to Fablix, </h1>
+        <div class="head_b">
+            <i class="fa fa-shopping-cart" id='cart_button'></i>
+            <form id="login_form" ACTION="main.html" METHOD="GET">
+                <input class="logout_button" TYPE="submit" value="Logout">
+            </form>
+        </div>
+    </div>
+    <div class="a">
+        <div class="b">
+
+            <h1 class="search_head">Main Search: </h1>
+
+            <form  id="main_search_form" ACTION="movie.html" METHOD="GET">
+                <input  class = "e1"TYPE="TEXT" name="fullSearch" id="autocomplete">
+                <input  class="g1" TYPE="SUBMIT" VALUE="Search">
+            </form>
+
+
+
+
+            <h1 class="genres_head"> Genres </h1>
+
+            <div class="links" id="genres_links">
+
+            </div>
+
+            <h1> First Character </h1>
+            <div class="links" id="char_links">
+                <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=&AZ=*">
+        *
+    </a></div>
+        </div>
+
+        <div class="c">
+            <h1 class="search_head">Detail Search: </h1>
+            <form class="d" id="search_form" ACTION="movie.html" METHOD="GET">
+                <h3> Title: </h3>
+                <input class="e" TYPE="TEXT" placeholder="Title" name="name" />
+                <h3> Director: </h3>
+                <input class="e" TYPE="TEXT" placeholder="Director" name="director" />
+                <h3> Star: </h3>
+                <input class="e" TYPE="TEXT" placeholder="Star Name" name="stars" />
+                <h3> Year: </h3>
+                <input class="e" TYPE="TEXT" placeholder="Year" name="year" />
+                <input class="g" TYPE="SUBMIT" VALUE="Search">
+            </form>
+        </div>
+    </div>
+
+
+
+    <!-- <h1>Fabflix</h1>
+    <p id="username"></p>
+
+    <form id="search_form" ACTION="movie.html" METHOD="GET">
+        Title: <input TYPE="TEXT" name="name"> <br> Director: <input TYPE="TEXT" name="director"> <br> Stars: <input TYPE="TEXT" name="stars"> <br> Year: <input TYPE="TEXT" name="year"> <br>
+        <input TYPE="SUBMIT" VALUE="Search">
+
+
+
+    </form>
+
+    <div class="link">
+        <p> Genres: </p>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=Action">
+        Action
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=Adult">
+        Adult
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=Adventure">
+        Adventure
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=Animation">
+       Animation
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=Biography">
+        Biography
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=Comedy">
+        Comedy
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=Documentary">
+        Documentary
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=Drama">
+        Drama
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=Family">
+        Family
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=Fantasy">
+        Fantasy
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=History">
+        History
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=Horror">
+        Horror
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=Music">
+        Music
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=Musical">
+        Musical
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=Mystery">
+        Mystery
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=Reality-TV">
+        Reality-TV
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=Romance">
+        Romance
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=Sci-Fi">
+        Sci-Fi
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=Sport">
+        Sport
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=Thriller">
+        Thriller
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=War">
+        War
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=Western">
+        Western
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=Western">
+        Western
+    </a>
+
+        <p> A-Z: </p>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=&AZ=A">
+        A
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=&AZ=B">
+        B
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=&AZ=C">
+        C
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=&AZ=D">
+        D
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=&AZ=E">
+        E
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=&AZ=F">
+        F
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=&AZ=G">
+        G
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=&AZ=H">
+        H
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=&AZ=I">
+        I
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=&AZ=J">
+        J
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=&AZ=K">
+        K
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=&AZ=L">
+        L
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=&AZ=M">
+        M
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=&AZ=N">
+        N
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=&AZ=O">
+        O
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=&AZ=P">
+        P
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=&AZ=Q">
+        Q
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=&AZ=R">
+        R
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=&AZ=S">
+        S
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=&AZ=T">
+        T
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=&AZ=U">
+        U
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=&AZ=V">
+        V
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=&AZ=W">
+        W
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=&AZ=X">
+        X
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=&AZ=Y">
+        Y
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=&AZ=Z">
+        Z
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=&AZ=0">
+        0
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=&AZ=1">
+        1
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=&AZ=2">
+        2
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=&AZ=3">
+        3
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=&AZ=4">
+        4
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=&AZ=5">
+        5
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=&AZ=6">
+        6
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=&AZ=7">
+        7
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=&AZ=8">
+        8
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=&AZ=9">
+        9
+    </a>
+        <a class="link-dec" href="movie.html?name=&director=&stars=&year=&genre=&AZ=*">
+        *
+    </a>
+    </div> -->
+
+    <!--
+<div class = "link">
+    <a class="link-dec" href="index.html">
+        <div class="back-button-text" align="center">
+            Checkout
+        </div>
+    </a>
+</div>
+-->
+
+
+
+    <!-- include jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- include our own JS file -->
+    <!-- include jquery autocomplete JS  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.11/jquery.autocomplete.min.js"></script>
+
+    <!-- Bootstrap for CSS -->
+<!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>-->
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>

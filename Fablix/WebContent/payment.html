@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="payment.css">
+    <title>Payment</title>
+    
+</head>
+<body>
+
+
+    <i class="fa fa-shopping-cart" id='cart_button'></i>
+    <i class="fas fa-home" id='home'></i>
+<div id="total_price3"></div>
+
+
+
+
+<div class="grey_form">
+<div class="pay_form">
+    <h3>Payment</h3>
+    <form id = "place_order"  METHOD="Post">
+        <label for="fname">Fisrt Name</label>
+        <input id = 'fname'TYPE="TEXT" name="fname" required> <br>
+        <label for="lname">Last Name</label>
+        <input id= 'lname'TYPE="TEXT" name="lname" required> <br>
+        <label for="card">Credit card number</label>
+        <input id = "card"TYPE="TEXT" name="card" required> <br>
+        <label for="exp">Exp Date</label>
+        <input id = "exp"TYPE="date" name="exp" required> <br>
+        <!--    <input TYPE="hidden" name="numRecords"> <br>-->
+        <input class = "checkout"TYPE="SUBMIT" VALUE="checkout">
+    </form>
+</div>
+</div>
+
+<div id="pay_error_message"></div>
+<!-- include your own JS file -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type='text/javascript' src='payment.js'></script>
+
+</body>
+</html>

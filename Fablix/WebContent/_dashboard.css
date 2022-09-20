@@ -1,0 +1,76 @@
+body {
+    background-image: linear-gradient(to left, #191D23, #528A8E);
+    display: flex;
+    justify-content: center;
+}
+
+.a {
+    position: relative;
+    top: 100px;
+    width: 70%;
+    height: 600px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .8);
+    display: flex;
+}
+
+.b {
+    width: 70%;
+    height: 100%;
+    background-image: url("pic/inception.jpg");
+    background-size: cover;
+}
+
+.c {
+    width: 30%;
+    min-width: 300px;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d {
+    width: 250px;
+    height: 500px;
+}
+
+.d h1 {
+    font-size: 30px;
+}
+
+.d h2 {
+    font-size: 45px;
+    font-style: italic;
+    font-family: "Apple Chancery";
+}
+
+.e {
+    width: 230px;
+    margin: 20px 0;
+    outline: none;
+    border: 0;
+    padding: 10px;
+    border-bottom: 3px solid rgb(80, 80, 170);
+    font: 900 16px '';
+}
+
+.f {
+    color: red;
+    justify-content: center;
+}
+
+.g {
+    position: absolute;
+    margin: 20px;
+    bottom: 0px;
+    display: block;
+    width: 200px;
+    height: 60px;
+    font: 900 30px '';
+    text-decoration: none;
+    line-height: 50px;
+    border-radius: 30px;
+    background: linear-gradient(to left, #BBD2C5, #536976, #292E49);
+    text-align: center;
+}

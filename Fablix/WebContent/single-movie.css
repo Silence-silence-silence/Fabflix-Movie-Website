@@ -1,0 +1,122 @@
+html {
+    height: 100%;
+    background: linear-gradient(to bottom, #4fc3f7, #86fde8);
+}
+
+.card-box {
+    border-radius: 20px;
+    padding: 10px;
+    margin: 50px 100px 50px;
+    box-shadow: 0px 0px 30px rgba( 100, 181, 246, 1);
+    background: white;
+}
+
+.button {
+    background-color: white;
+    border: none;
+    color: #4fc3f7;
+    padding: 6px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 0px 85% 0px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.back-button-text {
+    border-radius: 20px;
+    padding: 5px;
+    color: white;
+    font-size: 35px;
+    text-decoration: none;
+}
+
+.link {
+    border-radius: 20px;
+    padding: 5px;
+    color: white;
+    background: #595959;
+    font-size: 35px;
+    margin: 30px auto;
+    width: 30%;
+}
+
+a:visited,
+a:link {
+    color: #0000EE;
+    text-decoration: underline;
+}
+
+.link a:link {
+    text-decoration: none;
+    color: white;
+}
+
+.link a:hover,
+.link a:active {
+    text-decoration: underline;
+    color: white;
+}
+
+h1 {
+    margin: 50px 100px 30px;
+    font-size: 50px;
+    text-shadow: 3px 3px 3px rgba( 100, 181, 246, 1);
+}
+
+h3 {
+    margin: 10px 100px 10px;
+    font-size: 25px;
+}
+
+span {
+    color: #d4380d
+}
+
+.popup {
+    display: none;
+}
+
+.popup.open {
+    display: block;
+}
+
+.background {
+    content: ' ';
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.popup .Succeful {
+    border: 2px solid #ccc;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #9af3ff;
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-60%, -60%);
+}
+
+.fa.fa-shopping-cart {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.fas.fa-home {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#cart {
+    margin: 40px 8% 0px;
+    align-content: center;
+}

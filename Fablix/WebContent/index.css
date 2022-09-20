@@ -1,0 +1,55 @@
+.fa.fa-shopping-cart {
+    color: #4fc3f7;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.fas.fa-home {
+    color: #4fc3f7;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.movie_info{
+    font-size: 30px;
+}
+
+.bu_back{
+    background-color: #4fc3f7;
+    border: none;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 4px 4px;
+    border-radius: 100%;
+}
+
+.total_price1 {
+    alignment: center;
+    font-size: 24px;
+
+}
+
+
+.pay_style{
+    background-color: #4fc3f7;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.order_list
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
